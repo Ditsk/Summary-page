@@ -1,0 +1,133 @@
+body {
+    background-image: url("pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(225, 100%, 98%);
+    
+    border-radius: 20px;
+    margin: 50% 5% 0 5%;
+    
+    
+}
+
+#container-box {
+    
+    text-align: center;
+    padding: 2em;
+    
+
+}
+
+#menu-cover {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#plan {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#price > h4 {
+    margin: 15% 0 5% 0;
+}
+
+#price > p {
+    margin: 0 0 15% 0;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+#purple-btn {
+    background-color: hsl(245, 75%, 52%);
+    color:hsl(225, 100%, 98%);
+    font-weight: 900;
+}
+
+#white-btn {
+    background-color: hsl(225, 100%, 98%);
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+}
+
+.img-hero {
+    border-radius: 20px 20px 0 0 ;
+}
+
+.low-txt {
+    color: hsl(224, 23%, 55%);
+}
+
+.high-txt {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.mid-txt {
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (min-width: 900px) {
+    #container {
+        width: 40%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    body {
+        background-image: url("pattern-background-desktop.svg");
+    }
+    
+    #plan {
+        gap: 50px;
+    }
+
+    
+}
+
+
+#purple-btn:hover {
+    opacity: 0.8;
+}
+
+#white-btn:hover {
+    opacity: 0.8;
+    color: black;
+}
+
+.link:hover {
+    opacity: 0.8;
+}
